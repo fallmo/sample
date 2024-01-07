@@ -27,7 +27,7 @@ app.get("/fibonacci", async (req, res) => {
   return fibonacci(num - 1) + fibonacci(num - 2);
 	}
 
-	const result = fibonacci(Math.ceil(Math.random(0,1)*100)));
+	const result = fibonacci(Math.ceil(Math.random(0,1)*100));
 
 	
 	res.rend(`Result ${result}`);
