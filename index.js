@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
   res.send(`Welcome to app!\nInstance '${process.env.HOSTNAME}'\n`);
 });
 
+app.get("/env", (req, res) => {
+  res.json(process.env);
+});
+
 app.get("/simulate-crash", (req, res) => {
   res.send("Simulating Server Crash!\n");
   console.log(`Oops Error. something went wrong! Crashing...\n`);
