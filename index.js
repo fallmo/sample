@@ -17,7 +17,7 @@ app.get("/simulate-crash", (req, res) => {
 });
 
 app.get("/version", (req, res) => {
-  res.send("App running version 1.0\n");
+  res.send("App running version 1.1\n");
 });
 
 
